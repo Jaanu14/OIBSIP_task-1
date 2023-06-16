@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c08989;
+}
+h1{
+    color: #0d0d0e;
+}
+.cal{
+    position: relative;
+    min-width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #fffb;
+}
+.cal .btn{
+    position: relative;
+    display: grid;
+}
+.cal .btn #text
+{
+    position: relative;
+    grid-column: span 5;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color:rgb(41, 140, 246);
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em; 
+    font-weight: 500;
+}
+.cal .btn span
+{
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(240, 238, 238),
+    -5px -5px 20px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border: 2px solid #edf1f4;
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.1), */
+    /* -5px -5px 10px #fff; */
+    border-radius: 10px;
+}
+
+.cal .btn span:active
+{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px #fff;
+    color: #f44336;
+}
+
+.cal .btn span#clear
+{
+    grid-column: span 2;
+    background-color: red;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.cal .btn span#add
+{
+    grid-row: span 2;
+    background-color: #31a935;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.cal .btn span#eval
+{
+    grid-column: span 2;
+    background-color: #0a1a87;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.cal .btn span#clear,
+.cal .btn span#add,
+.cal .btn span#eval
+{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 20px #fff,
+    inset 5px 5px 10px rgb(249, 245, 245);    
+}
+
